@@ -298,32 +298,32 @@
                  * lots of variation from one device to another in style
                </aside>
             </section>
-            <section data-markdown>
-               ### Separate the content from the display
-               ```yaml
+            <section>
+              <h3>Separate the content from the display</h3>
+              <pre><code class="yaml" data-trim contenteditable style="font-size: 18px;">
                media_specifications:
-               video:
-               h265:
-               ftvcube: Hardware accelerated up to 3840x2160p (4K) @ 60fps...
-               ftvgen3: Hardware accelerated up to 3840x2160p (4K) @ 60fps...
-               ftvgen2: Hardware accelerated up to 3840x2160p (4K) @ 30fps...
-               ftvgen1: Not supported
-               ftvstickgen2: Hardware accelerated up to 1080p @ 30fps...
-               ftvstickbasicedition: Hardware accelerated up to 1080p @ 30fps...
-               ftveditionelement: Hardware accelerated up to 3840x2160p (4K) @ 60fps...
-               ftveditiontoshiba4k: Hardware accelerated up to 3840x2160p (4K) @ 60fps...
-               h264:
-               ftvcube: Hardware accelerated up to 3840x2160p @ 30fps...
-               ftvgen3: Hardware accelerated up to 3840x2160p @ 30fps...
-               ftvgen2: Hardware accelerated up to 1080p @ 30fps...
-               ftvgen1: Hardware accelerated up to 1080p @ 30fps...
-               ftvstickgen2: Hardware accelerated up to 1080p @ 30fps...
-               ftvstickgen1: Hardware accelerated up to 1080p @ 30fps...
-               ftvstickbasicedition: Hardware accelerated up to 1080p @ 30fps...
-               ftveditionelement: Hardware accelerated up to 3840x2160p @ 60fps...
-               ftveditiontoshiba4k: Hardware accelerated up to 3840x2160p @ 30fps...
+                 video:
+                   h265:
+                     ftvcube: Hardware accelerated up to 3840x2160p (4K) @ 60fps...
+                     ftvgen3: Hardware accelerated up to 3840x2160p (4K) @ 60fps...
+                     ftvgen2: Hardware accelerated up to 3840x2160p (4K) @ 30fps...
+                     ftvgen1: Not supported
+                     ftvstickgen2: Hardware accelerated up to 1080p @ 30fps...
+                     ftvstickbasicedition: Hardware accelerated up to 1080p @ 30fps...
+                     ftveditionelement: Hardware accelerated up to 3840x2160p (4K) @ 60fps...
+                     ftveditiontoshiba4k: Hardware accelerated up to 3840x2160p (4K) @ 60fps...
+                   h264:
+                     ftvcube: Hardware accelerated up to 3840x2160p @ 30fps...
+                     ftvgen3: Hardware accelerated up to 3840x2160p @ 30fps...
+                     ftvgen2: Hardware accelerated up to 1080p @ 30fps...
+                     ftvgen1: Hardware accelerated up to 1080p @ 30fps...
+                     ftvstickgen2: Hardware accelerated up to 1080p @ 30fps...
+                     ftvstickgen1: Hardware accelerated up to 1080p @ 30fps...
+                     ftvstickbasicedition: Hardware accelerated up to 1080p @ 30fps...
+                     ftveditionelement: Hardware accelerated up to 3840x2160p @ 60fps...
+                     ftveditiontoshiba4k: Hardware accelerated up to 3840x2160p @ 30fps...
                ...
-               ```
+             </code></pre>
             </section>
             <section>
                <h3>Display result</h3>
@@ -334,44 +334,44 @@
                  * follow rules of template and it's not complicated
                </aside>
             </section>
-            <section data-markdown>
-               ### Identify the structure
-               ```yaml
+            <section>
+               <h3>Identify the structure</h3>
+               <pre><code class="yaml" data-trim contenteditable style="font-size: 18px;">
                ElementName:
-               anchor: string
-               description: >
-               string
-               required: boolean
-               added: string
-               deprecated: string
-               parent_elements:
-               - name: string
-               deprecated: boolean
-               child_elements:
-               required:
-               - name: string
-               deprecated: boolean
-               optional:
-               - name: string
-               deprecated: boolean
-               this_element_only_required:
-               - name: string
-               deprecated: boolean
-               this_element_only_optional:
-               - name: string
-               deprecated: boolean
-               child_elements_notes: string
-               child_elements_this_element_only_notes: string
-               attributes:
-               - name: string
-               accepted_values:
-               - value: boolean
-               description: string
-               required: boolean
-               accepted_values: string (if empty, [])
-               example: |
-               code...
-               ```
+                 anchor: string
+                 description: >
+                   string
+                 required: boolean
+                 added: string
+                 deprecated: string
+                 parent_elements:
+                   - name: string
+                     deprecated: boolean
+                 child_elements:
+                   required:
+                     - name: string
+                       deprecated: boolean
+                   optional:
+                     - name: string
+                       deprecated: boolean
+                   this_element_only_required:
+                     - name: string
+                       deprecated: boolean
+                   this_element_only_optional:
+                     - name: string
+                       deprecated: boolean
+                 child_elements_notes: string
+                 child_elements_this_element_only_notes: string
+                 attributes:
+                   - name: string
+                     accepted_values:
+                       - value: boolean
+                         description: string
+                         required: boolean
+                 accepted_values: string (if empty, [])
+                 example: |
+                   code...
+               </code></pre>
 
             </section>
             <section>
